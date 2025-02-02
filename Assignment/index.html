@@ -30,13 +30,49 @@
     </script>
     <!--? Font awasome -->
     <script src="https://kit.fontawesome.com/d0c7db6194.js" crossorigin="anonymous"></script>
+
+    <style>
+        
+    .sura{
+    font-family: "Sora", serif;
+    }
+    
+    @keyframes bounceColorChange {
+            0% {
+                transform: translateY(0);
+                color: red;
+            }
+            25% {
+                transform: translateY(-10px);
+                color: orange;
+            }
+            50% {
+                transform: translateY(0);
+                color: yellow;
+            }
+            75% {
+                transform: translateY(10px);
+                color: green;
+            }
+            100% {
+                transform: translateY(0);
+                color: skyblue;
+            }
+        }
+
+        .anim {
+            animation: bounceColorChange 5s ease-in-out infinite;
+        }
+
+    </style>
+
 </head>
 <body class="sura">
     <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
         <!-- desktop nav -->
         <nav class=" md:container max-sm:hidden  mx-auto flex justify-between items-center py-6 mb-24">
         <!-- nav logo -->
-        <div class="border-dashed border-2 border-indigo-600">
+        <div class="border-dashed border-2 border-gray-300">
             <img src="../pic/logo-header.png" alt="header logo">
         </div>
         <!-- nav link -->
@@ -66,14 +102,14 @@
         </div>
         </nav>
         <!-- mobile Nav -->
-        <nav class="sm:hidden flex items-center justify-between px-4 py-3 mb-12 border-b border-red-600">
+        <nav class="sm:hidden flex items-center justify-between px-4 py-3 mb-12 border-b border-[#179800]">
             <div><img src="../pic/Group.png" alt="logo"></div>
-            <div><i class="fa-solid fa-bars"></i></div>
+            <div><i class="fa-solid fa-bars text-[#179800]"></i></div>
         </nav>
 
         <section class="md:container mx-auto md:mb-36 mb-12">
             <h2 class="text-3xl md:text-6xl font-semibold text-center md:mb-8">Freshness <span class="text-[#179800]">You Can</span><br><span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h2><br>
-            <p class="text-base md:text-xl font-light md:font-normal text-center md:mb-9 my-4">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p><br>
+            <p class="text-base md:text-xl font-light md:font-normal text-center md:mb-9 my-4 anim">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p><br>
             <img class="mx-auto" src="../pic/hero-vegetables.png" alt="banner image">
         </section>
     </header>
@@ -91,7 +127,7 @@
                     </div>
                     
                     <h4 class="text-xl md:text-2xl font-semibold text-center mt-6 mb-3">24/7 Services </h4>
-                    <p class="text-base md:text-xl font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="text-base md:text-xl font-light text-center">Green peas are a good source of plant-based protein, which may be especially plant-based protein,</p>
                 </div>
                 <!-- cart-2 -->
                 <div class="bg-[#EFEBE3] px-8 pt-8 pb-11 rounded-2xl"> 
@@ -100,7 +136,7 @@
                     </div>
                     
                     <h4 class="text-xl md:text-2xl font-semibold text-center mt-6 mb-3">Fast Delivery</h4>
-                    <p class="text-base md:text-xl font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="text-base md:text-xl font-light text-center">Green peas are a good source of plant-based protein, which may be especially plant-based protein,</p>
                 </div>
                 <!-- cart-3 -->
                 <div class="bg-[#EFEBE3] px-8 pt-8 pb-11 rounded-2xl"> 
@@ -109,7 +145,7 @@
                     </div>
                     
                     <h4 class="text-xl md:text-2xl font-semibold text-center mt-6 mb-3">Healthy Products </h4>
-                    <p class="text-base md:text-xl font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    <p class="text-base md:text-xl font-light text-center">Green peas are a good source of plant-based protein, which may be especially plant-based protein,</p>
                 </div>
 
             </div>
@@ -121,7 +157,7 @@
         <!-- popular product -->
        <section class="bg-[#EFEBE3]">
 
-        <section class="md:container mx-auto md:mb-36 mb-12 max-md:px-6 my-12 md:py-36 ">
+        <section class="md:container mx-auto md:mb-36 mb-12 max-md:px-6 my-12 py-12 md:py-36 ">
             <h3 class="md:text-4xl md:font-semibold text-[#179800] md:mb-12 mb-8">Popular Products</h3>
             <!-- baner_title -->
 
@@ -287,7 +323,7 @@
             <div class="md:flex justify-between items-center bg-[#EFEBE3] absolute inset-x-0 -top-72 md:-top-40 xl:-top-48  rounded-2xl md:px-10 lg:px-28">
                 <div><img class="mx-auto mt-8" src="../pic/vegetable-busket.png" alt=""></div>
                 <div>
-                    <h2 class="text-xl md:text-4xl font-semibold md:text-start text-center md:text-black text-green-400 mt-6">Get Grocery News!</h2>
+                    <h2 class="text-xl md:text-4xl font-semibold md:text-start text-center md:text-black text-[#179800] mt-6">Get Grocery News!</h2>
                     <p class="text-base md:text-xl font-normal text-center my-4 md:my-6 px-2">Exclusive training tips, ticks, product deals and more.</p>
                     <div class="flex justify-center  md:justify-start md:px-0 px-4"><input type="text" placeholder="Enter email..." class="w-full px-4 md:py-3 py-2 rounded-md"></div>
                     <div class="flex justify-center md:justify-start mb-10 md:mt-8 mt-3"><button class="text-sm md:text-xl font-normal text-center px-6 py-2 rounded-md bg-[#179800] text-white">Subscribe</button></div>
